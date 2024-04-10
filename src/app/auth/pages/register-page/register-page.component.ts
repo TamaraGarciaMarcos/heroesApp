@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-register-page',
+  selector: 'auht-register-page',
   templateUrl: './register-page.component.html',
-  styles: ``
+  styles: [
+
+  ]
 })
 export class RegisterPageComponent {
 

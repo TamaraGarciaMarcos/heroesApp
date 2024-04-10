@@ -8,11 +8,11 @@ const routes: Routes = [
 
   {
     path: 'auth',
-    loadChildren:()=> import('./auth/auth.module').then(m=>m.AuthModule)
+    loadChildren: () => import('./auth/auth.module').then( m => m.AuthModule ),
   },
   {
     path: 'heroes',
-    loadChildren:()=> import('./heroes/heroes.module').then(m=>m.HeroesModule)
+    loadChildren: () => import('./heroes/heroes.module').then( m => m.HeroesModule ),
   },
   {
     path: '404',
@@ -24,11 +24,9 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path:'**',
-    redirectTo: '404'
+    path: '**',
+    redirectTo: '404',
   }
-
-
 ];
 
 @NgModule({
