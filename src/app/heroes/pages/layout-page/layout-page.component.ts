@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { url } from 'inspector';
 
 @Component({
   selector: 'app-layout-page',
@@ -8,5 +9,11 @@ import { Component } from '@angular/core';
   ]
 })
 export class LayoutPageComponent {
+
+  public sidebarItems =[
+    {label: 'Listado', icon: 'label', url: './list'},
+    {label: 'Añaddir', icon: 'add', url: './new-hero'},
+    {label: 'Buscar', icon: 'search', url: './search'},
+  ]
 
 }
