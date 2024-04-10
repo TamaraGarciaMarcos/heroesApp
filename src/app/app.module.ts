@@ -18,7 +18,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SharedModule
   ],
   providers: [
-    provideClientHydration(),
     provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
