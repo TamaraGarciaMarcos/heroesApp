@@ -5,7 +5,7 @@
     <mat-card-subtitle>{{hero.alter_ego}}</mat-card-subtitle>
   </mat-card-header>
 
-  <!-- TODO: imagen  -->
+  <img mat-card-image [src]=" hero | heroImage" [alt]="hero.superhero">
 
   <mat-card-content class="mt-2">
     <h4>{{hero.publisher}}</h4>
@@ -32,7 +32,7 @@
     <span class="spacer"></span>
 
     <button mat-button mat-raised color="base"
-    [routerLink]="['/heroes/edit/', hero.id]">
+    [routerLink]="['/heroes/', hero.id]">
       <mat-icon>more_horiz</mat-icon>
     </button>
 
